@@ -1,1 +1,12 @@
-
+section {
+    display: flex;
+    flex-direction: column;
+    ion-button {
+        border: 1px solid blue;
+        color: black;
+        &:hover {
+            color: blue;
+            background-color: black;
+        }
+    }
+}

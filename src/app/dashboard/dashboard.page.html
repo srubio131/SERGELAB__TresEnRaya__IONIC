@@ -1,0 +1,13 @@
+<div class="dashboard">
+
+  <table>
+    <tr *ngFor="let row of [0,1,2]">
+      <td *ngFor="let col of [0,1,2]" (click)="onClickCell(row,col)"
+          [ngClass]="{ 'image_x': dashboard[row][col] === 'x',  'image_circle': dashboard[row][col] === 'o'}" >
+      </td>
+    </tr>
+  </table>
+
+  <div>Winner is: {{ winner }}</div>
+
+</div>
